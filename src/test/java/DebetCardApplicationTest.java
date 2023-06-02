@@ -23,6 +23,7 @@ public class DebetCardApplicationTest {
         $("[data-test-id = order-success]").shouldHave(exactText("Ваша заявка успешно отправлена! Наш менеджер свяжется с вами в ближайшее время."));
     }
 
+
     @Test
     void shouldReturnPositiveResultWithHyphen()  {
         open("http://localhost:9999");
