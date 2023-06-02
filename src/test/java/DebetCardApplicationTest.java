@@ -11,16 +11,6 @@ import static com.codeborne.selenide.Selenide.open;
 
 public class DebetCardApplicationTest {
 
-    WebDriver driver;
-
-    @BeforeEach
-    void setup() {
-        driver = WebDriverManager.chromedriver().create();
-    }
-    @AfterEach
-    void teardown() {
-        driver.quit();
-    }
     @Test
     void test1() throws InterruptedException {
         open("http://localhost:9999");
